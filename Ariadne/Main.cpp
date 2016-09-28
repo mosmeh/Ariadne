@@ -7,6 +7,8 @@ void Main() {
 	auto manager = MyApp();
 	manager.add<MazeScene>(L"Game");
 
+	Window::Resize(1280, 720);
+
 	while (System::Update()) {
 		if (!manager.updateAndDraw()) {
 			break;

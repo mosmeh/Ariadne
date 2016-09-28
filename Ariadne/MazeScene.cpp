@@ -20,7 +20,7 @@ void MazeScene::init() {
 	spotLightCB->attenuation = 0.01f;
 	spotLightCB->diffuseColor = Float3(1, 0.9, 0.3);
 	spotLightCB->exponent = 32.0f;
-	spotLightCB->cutoff = static_cast<float>(30_deg);
+	spotLightCB->cutoff = static_cast<float>(90_deg);
 }
 
 void MazeScene::update() {
