@@ -25,6 +25,7 @@ private:
 	Camera camera;
 	Vec2 pos;
 	double lookAtTheta = 90_deg, lookAtPhi = 0;
+	int walkingFrames = 0;
 
 	Mesh groundMesh;
 	TransformedMesh ceilingMesh;
