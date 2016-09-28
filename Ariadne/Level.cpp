@@ -67,7 +67,7 @@ void Level::drawForward() const {
 }
 
 bool Level::intersects(Vec2 point) const {
-	auto player = Sphere(point.x, WALL_HEIGHT / 2, point.y, 2);
+	auto player = Sphere(point.x, WALL_HEIGHT / 2, point.y, 0.3);
 	for (auto& w : walls) {
 		if (w.intersects(player)) {
 			return true;
