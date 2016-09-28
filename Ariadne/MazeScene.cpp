@@ -29,10 +29,14 @@ void MazeScene::update() {
 	lookAtTheta += pointingDirection.y;
 
 	if (Input::MouseL.pressed || Input::MouseR.pressed) {
+		++walkingFrames;
 		const auto tempPos = pos + PLAYER_SPEED * (Input::MouseL.pressed - Input::MouseR.pressed) * Vec2::UnitX.rotated(lookAtPhi);
 		if (!level.intersects(tempPos)) {
 			pos = tempPos;
 		}
+	}
+	else {
+		walkingFrames = 0;
 	}
 
 	// キーボード操作
@@ -44,7 +48,7 @@ void MazeScene::update() {
 		pos = tempPos;
 	}*/
 
-	camera.pos = Vec3(pos.x, 2, pos.y);
+	camera.pos = Vec3(pos.x, 2 + 0.1 * sin(2 * Pi * walkingFrames * 0.035), pos.y);
 	const auto direction = Vec3(Spherical(1, lookAtTheta, lookAtPhi)).normalized();
 	camera.lookat = camera.pos + direction;
 	Graphics3D::SetCamera(camera);
