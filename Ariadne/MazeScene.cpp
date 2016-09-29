@@ -25,8 +25,8 @@ void MazeScene::init() {
 
 void MazeScene::update() {
 	const auto pointingDirection = (Mouse::PosF() - Window::Center()) / (Window::Width() * 10);
+	lookAtTheta = Min(179_deg, Max(1_deg, lookAtTheta + pointingDirection.y));
 	lookAtPhi -= pointingDirection.x;
-	lookAtTheta += pointingDirection.y;
 
 	if (Input::MouseL.pressed || Input::MouseR.pressed) {
 		++walkingFrames;
