@@ -1,0 +1,20 @@
+@begin
+    regsound bgm sounds/maze-bgm-easy.mp3
+    playsound bgm loop
+    direct south
+    loadmaze /500 #levels/tutorial.csv
+    msg チュートリアルを始めます\n\nキーボードのW,A,S,Dで移動できます\n前に進んでください
+
+@goal
+    #playsound clear
+    freeze
+    msg ゴール!\n\nアクアのほかにも様々な能力を持ったキャラクターたちがいます。彼らの能力を使いこなしてより早くゴールしましょう
+    unfreeze
+    stopsound bgm
+    unregsound bgm
+
+@0
+    msg マウスで視点を操作できます\n左に進んでください
+
+@1
+    msg アクアの能力を使って目の前の壁を壊してみましょう\n\n右クリックでキャラクター選択モードに入ります\n右上のボタンを押すとキャラクターの能力を発動できます

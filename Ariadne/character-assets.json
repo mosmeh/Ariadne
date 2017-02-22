@@ -1,0 +1,50 @@
+{
+    "aqua": {
+        "displayName": "アクア",
+        "description": "「この爆弾はね、壁を壊す事が出来るの。私特製の爆弾で壁なんか粉々よ！」",
+        "confirm": "「どんな分厚い壁でも、大穴開けてあげるね！」",
+        "invoking": "「みんな下がって！　ウノ・ドス・トレス…………ボンバ！」",
+        "standingImage": "/224",
+        "faceImage": "/234"
+    },
+    "aglaia": {
+        "displayName": "アグライア",
+        "description": "「暗い迷宮の中……、明るくする。」",
+        "confirm": "「……暗い？」",
+        "invoking": "「……照らして。」",
+        "standingImage": "/221",
+        "faceImage": "/231"
+    },
+    "anastasia": {
+        "displayName": "アナスタシア",
+        "description": "「私の力は、迷宮内に目印となる紋章を刻み込む事だ。」",
+        "confirm": "「このあたりで良いのか？」",
+        "invoking": "「私が立つこの場に、古の白き紋章（しるし）を刻め。」",
+        "standingImage": "/222",
+        "faceImage": "/232"
+    },
+    "astrea": {
+        "displayName": "アストレア",
+        "description": "「ダウジングがゴールの方向を示してくれるよ。」",
+        "confirm": "「もうわっかんないねー。それ、ここは一つ、運を天に任せてみない？」",
+        "invoking": "「教えて、私はどっちに進めばいいの？」",
+        "standingImage": "/225",
+        "faceImage": "/235"
+    },
+    "anemone": {
+        "displayName": "アネモネ",
+        "description": "「私が道を教えてあげる。」",
+        "confirm": "「なあに、また迷ったの？」",
+        "invoking": "「ねえ、こっちこっち！　早く行こう？」",
+        "standingImage": "/223",
+        "faceImage": "/233"
+    },
+    "adne": {
+        "displayName": "アドネ",
+        "description": "「私？　私は周りの道を表示してあげるわ。便利でしょう？」",
+        "confirm": "「馬鹿ね。こんなものは私の力で十分じゃないかしら？」",
+        "invoking": "「丸分かりよ。」",
+        "standingImage": "/220",
+        "faceImage": "/230"
+    }
+}

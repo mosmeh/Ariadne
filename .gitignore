@@ -244,3 +244,13 @@ ModelManifest.xml
 # Siv3D
 Engine/
 Example/
+/Ariadne/Screenshot
+/Ariadne/sounds
+/Ariadne/textures
+/Ariadne/_levels.json
+/Ariadne/_init.script
+/Ariadne/_character-assets.json
+/Ariadne/spotlight.vs
+/Ariadne/spotlight.ps
+/Ariadne/scores.csv
+/Ariadne/Screenshot.zip

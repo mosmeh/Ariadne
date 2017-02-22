@@ -1,0 +1,34 @@
+@begin
+    playsound bgm loop
+    loadmaze levels/debug.csv
+    direct west
+    msgbox test
+
+@goal
+    stopsound bgm
+    playsound clear
+    freeze
+    msg ゴール!
+    unfreeze
+
+@0
+    blackout
+    freeze
+    msg リセットします
+    unfreeze
+    source levels/debug.script
+
+@1
+    meet aqua
+    meet aglaia
+    freeze
+    img 1 sample 0.4 0.5 0.25
+    img 2 astrea 0.6 0.5 0.25
+    name Aqua
+    msg Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    name Aglaia
+    msg All your base are belong to us
+    name clear
+    msg 祇園精舎の鐘の声､諸行無常の響きあり。沙羅双樹の花の色､盛者必衰の理をあらはす。おごれる人も久しからず､ただ春の夜の夢のごとし｡たけき者もつひには滅びぬ、ひとへに風の前の塵に同じ｡   
+    hideimg all
+    unfreeze

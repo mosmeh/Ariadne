@@ -1,0 +1,13 @@
+@begin
+    regsound bgm sounds/maze-bgm-hard.mp3
+    playsound bgm loop
+    direct south
+    loadmaze /530 #levels/hard.csv
+
+@goal
+    #playsound clear
+    freeze
+    msg ゴール!
+    unfreeze
+    stopsound bgm
+    unregsound bgm
