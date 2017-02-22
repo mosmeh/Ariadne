@@ -76,6 +76,9 @@
     <Filter Include="リソース ファイル\Example\Well">
       <UniqueIdentifier>{eb86b9be-05b8-45c6-89c8-f91a5437157c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="levels">
+      <UniqueIdentifier>{48b262a7-63ce-4602-9409-f488e9c259ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -85,6 +88,36 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Level.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TextBox.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptParser.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MazeParser.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="CutIn.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Wall.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="InnerMessageBox.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterSelectionScene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultScene.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -98,31 +131,7 @@
       <Filter>リソース ファイル</Filter>
     </Image>
     <Image Include="Engine\Splash.png">
-      <Filter>リソース ファイル\Engine</Filter>
-    </Image>
-    <Image Include="Example\Earth.jpg">
-      <Filter>リソース ファイル\Example</Filter>
-    </Image>
-    <Image Include="Example\Grass.jpg">
-      <Filter>リソース ファイル\Example</Filter>
-    </Image>
-    <Image Include="Example\Ground.jpg">
-      <Filter>リソース ファイル\Example</Filter>
-    </Image>
-    <Image Include="Example\Particle.png">
-      <Filter>リソース ファイル\Example</Filter>
-    </Image>
-    <Image Include="Example\Siv3D-kun.png">
-      <Filter>リソース ファイル\Example</Filter>
-    </Image>
-    <Image Include="Example\Windmill.png">
-      <Filter>リソース ファイル\Example</Filter>
-    </Image>
-    <Image Include="Example\Brick.jpg">
-      <Filter>リソース ファイル\Example</Filter>
-    </Image>
-    <Image Include="Example\Well\Well.jpg">
-      <Filter>リソース ファイル\Example\Well</Filter>
+      <Filter>リソース ファイル</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
@@ -303,26 +312,45 @@
     <None Include="Engine\Config.ini">
       <Filter>リソース ファイル\Engine</Filter>
     </None>
-    <None Include="Example\Hiragana.model">
-      <Filter>リソース ファイル\Example</Filter>
+    <None Include="levels.json" />
+    <None Include="texts.json" />
+    <None Include="character-assets.json" />
+    <None Include="init.script" />
+    <None Include="levels\debug.csv">
+      <Filter>levels</Filter>
     </None>
-    <None Include="Example\Prokofiev.mid">
-      <Filter>リソース ファイル\Example</Filter>
+    <None Include="levels\debug.script">
+      <Filter>levels</Filter>
     </None>
-    <None Include="Example\Test.csv">
-      <Filter>リソース ファイル\Example</Filter>
+    <None Include="levels\easy.csv">
+      <Filter>levels</Filter>
     </None>
-    <None Include="Example\Test.ini">
-      <Filter>リソース ファイル\Example</Filter>
+    <None Include="levels\easy.script">
+      <Filter>levels</Filter>
     </None>
-    <None Include="Example\Test.json">
-      <Filter>リソース ファイル\Example</Filter>
+    <None Include="levels\hard.csv">
+      <Filter>levels</Filter>
     </None>
-    <None Include="Example\Well\Well.mtl">
-      <Filter>リソース ファイル\Example\Well</Filter>
+    <None Include="levels\hard.script">
+      <Filter>levels</Filter>
     </None>
-    <None Include="Example\Well\Well.wavefrontobj">
-      <Filter>リソース ファイル\Example\Well</Filter>
+    <None Include="levels\lunatic.csv">
+      <Filter>levels</Filter>
+    </None>
+    <None Include="levels\lunatic.script">
+      <Filter>levels</Filter>
+    </None>
+    <None Include="levels\normal.csv">
+      <Filter>levels</Filter>
+    </None>
+    <None Include="levels\normal.script">
+      <Filter>levels</Filter>
+    </None>
+    <None Include="levels\tutorial.csv">
+      <Filter>levels</Filter>
+    </None>
+    <None Include="levels\tutorial.script">
+      <Filter>levels</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -341,58 +369,6 @@
     <Text Include="Engine\LogMessages.txt">
       <Filter>リソース ファイル\Engine</Filter>
     </Text>
-    <Text Include="Example\Test.txt">
-      <Filter>リソース ファイル\Example</Filter>
-    </Text>
-    <Text Include="Example\素材について.txt">
-      <Filter>リソース ファイル\Example</Filter>
-    </Text>
-    <Text Include="Example\Shaders\Blend2D.hlsl">
-      <Filter>リソース ファイル\Example\Shaders</Filter>
-    </Text>
-    <Text Include="Example\Shaders\Invert2D.hlsl">
-      <Filter>リソース ファイル\Example\Shaders</Filter>
-    </Text>
-    <Text Include="Example\Shaders\Monochrome2D.hlsl">
-      <Filter>リソース ファイル\Example\Shaders</Filter>
-    </Text>
-    <Text Include="Example\Shaders\PoissonDisk2D.hlsl">
-      <Filter>リソース ファイル\Example\Shaders</Filter>
-    </Text>
-    <Text Include="Example\Shaders\RGBSplit2D.hlsl">
-      <Filter>リソース ファイル\Example\Shaders</Filter>
-    </Text>
-    <Text Include="Example\Shaders\Simple2D.hlsl">
-      <Filter>リソース ファイル\Example\Shaders</Filter>
-    </Text>
-    <Text Include="Example\Shaders\Simple3D.hlsl">
-      <Filter>リソース ファイル\Example\Shaders</Filter>
-    </Text>
-    <Text Include="Example\Shaders\Simple3DForward.hlsl">
-      <Filter>リソース ファイル\Example\Shaders</Filter>
-    </Text>
-    <Text Include="Example\Shaders\Swirl2D.hlsl">
-      <Filter>リソース ファイル\Example\Shaders</Filter>
-    </Text>
-    <Text Include="Example\Shaders\Terrain3D.hlsl">
-      <Filter>リソース ファイル\Example\Shaders</Filter>
-    </Text>
-    <Text Include="Example\Shaders\Wave2DPointSprites.hlsl">
-      <Filter>リソース ファイル\Example\Shaders</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="Example\Sound.mp3">
-      <Filter>リソース ファイル\Example</Filter>
-    </Media>
-    <Media Include="Example\風の丘.mp3">
-      <Filter>リソース ファイル\Example</Filter>
-    </Media>
-  </ItemGroup>
-  <ItemGroup>
-    <Font Include="Example\YomogiFont.ttf">
-      <Filter>リソース ファイル\Example</Filter>
-    </Font>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MazeScene.h">
@@ -404,5 +380,41 @@
     <ClInclude Include="Common.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="TextBox.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Script.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Maze.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="InnerMessageBox.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterSelectionScene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Ability.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultScene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="SpotLight.hlsl" />
   </ItemGroup>
 </Project>

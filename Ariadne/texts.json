@@ -1,0 +1,14 @@
+{
+    "title": "Ariadne",
+    "confirm_close": "終了しますか?",
+    "start": "はじめる",
+    "back": "戻る",
+    "guide": "操作説明",
+    "back_to_title": "タイトルに戻る",
+    "confirm_back_to_title": "タイトルに戻りますか?",
+    "select_wall": "壁を選んでください",
+    "cannot_interact": "この壁には能力は使えません",
+    "too_far": "もっと近づいてください",
+    "guide_string": "キーボードのW,A,S,Dで移動します\nマウスで視点を操作します\n右クリックでキャラクター選択モードに入ります\n右上のボタンを選択するとキャラクターの能力を発動できます",
+    "ranking_format": "{}位 {}分{}秒{}"
+}

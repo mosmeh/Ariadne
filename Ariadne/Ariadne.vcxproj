@@ -133,6 +133,8 @@
       <SDLCheck>true</SDLCheck>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <OmitFramePointers>false</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -153,6 +155,8 @@
       <SDLCheck>true</SDLCheck>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <OmitFramePointers>
+      </OmitFramePointers>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -162,26 +166,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CharacterSelectionScene.cpp" />
+    <ClCompile Include="CutIn.cpp" />
+    <ClCompile Include="InnerMessageBox.cpp" />
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MazeParser.cpp" />
     <ClCompile Include="MazeScene.cpp" />
+    <ClCompile Include="ResultScene.cpp" />
+    <ClCompile Include="ScriptParser.cpp" />
+    <ClCompile Include="TextBox.cpp" />
+    <ClCompile Include="TitleScene.cpp" />
+    <ClCompile Include="Wall.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Engine\Splash.png" />
-    <Image Include="Example\Brick.jpg" />
-    <Image Include="Example\Earth.jpg" />
-    <Image Include="Example\Grass.jpg" />
-    <Image Include="Example\Ground.jpg" />
-    <Image Include="Example\Particle.png" />
-    <Image Include="Example\Siv3D-kun.png" />
-    <Image Include="Example\Well\Well.jpg" />
-    <Image Include="Example\Windmill.png" />
     <Image Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="character-assets.json" />
     <None Include="Engine\Assets\engine_textures.s3a" />
     <None Include="Engine\Config.ini" />
     <None Include="Engine\dll(x64)\D3D\d3dcompiler_47.dll" />
@@ -241,13 +248,21 @@
     <None Include="Engine\Shaders\D3D11\Sprite.vs" />
     <None Include="Engine\Shaders\D3D11\Sprite_Font.ps" />
     <None Include="Engine\Shaders\D3D11\Sprite_Stencil.ps" />
-    <None Include="Example\Hiragana.model" />
-    <None Include="Example\Prokofiev.mid" />
-    <None Include="Example\Test.csv" />
-    <None Include="Example\Test.ini" />
-    <None Include="Example\Test.json" />
-    <None Include="Example\Well\Well.mtl" />
-    <None Include="Example\Well\Well.wavefrontobj" />
+    <None Include="init.script" />
+    <None Include="levels.json" />
+    <None Include="levels\debug.csv" />
+    <None Include="levels\debug.script" />
+    <None Include="levels\easy.csv" />
+    <None Include="levels\easy.script" />
+    <None Include="levels\hard.csv" />
+    <None Include="levels\hard.script" />
+    <None Include="levels\lunatic.csv" />
+    <None Include="levels\lunatic.script" />
+    <None Include="levels\normal.csv" />
+    <None Include="levels\normal.script" />
+    <None Include="levels\tutorial.csv" />
+    <None Include="levels\tutorial.script" />
+    <None Include="texts.json" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Engine\dll(x64)\libmpg123\COPYING.txt" />
@@ -255,31 +270,25 @@
     <Text Include="Engine\dll(x86)\libmpg123\COPYING.txt" />
     <Text Include="Engine\dll(x86)\SoundTouch\COPYING.TXT" />
     <Text Include="Engine\LogMessages.txt" />
-    <Text Include="Example\Shaders\Blend2D.hlsl" />
-    <Text Include="Example\Shaders\Invert2D.hlsl" />
-    <Text Include="Example\Shaders\Monochrome2D.hlsl" />
-    <Text Include="Example\Shaders\PoissonDisk2D.hlsl" />
-    <Text Include="Example\Shaders\RGBSplit2D.hlsl" />
-    <Text Include="Example\Shaders\Simple2D.hlsl" />
-    <Text Include="Example\Shaders\Simple3D.hlsl" />
-    <Text Include="Example\Shaders\Simple3DForward.hlsl" />
-    <Text Include="Example\Shaders\Swirl2D.hlsl" />
-    <Text Include="Example\Shaders\Terrain3D.hlsl" />
-    <Text Include="Example\Shaders\Wave2DPointSprites.hlsl" />
-    <Text Include="Example\Test.txt" />
-    <Text Include="Example\素材について.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Media Include="Example\Sound.mp3" />
-    <Media Include="Example\風の丘.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <Font Include="Example\YomogiFont.ttf" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="Ability.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="CharacterSelectionScene.h" />
     <ClInclude Include="Common.h" />
+    <ClInclude Include="Effect.h" />
+    <ClInclude Include="InnerMessageBox.h" />
     <ClInclude Include="Level.h" />
+    <ClInclude Include="Maze.h" />
     <ClInclude Include="MazeScene.h" />
+    <ClInclude Include="ResultScene.h" />
+    <ClInclude Include="Script.h" />
+    <ClInclude Include="TextBox.h" />
+    <ClInclude Include="TitleScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="SpotLight.hlsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
